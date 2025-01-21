@@ -6,10 +6,19 @@
     <title>Responsive Multipage Education Website</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!--Font Awesome CDN-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!--Google Font CDN-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Swiper Js CDN-->
+    <link
+        rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
 </head>
 <body>
     <!-- ======= navbar start ======= -->
@@ -242,8 +251,102 @@
      </section>
     <!-- ======= FAQ end ======= -->
 
+    <!-- ======= Testimonial start ======= -->
+     <section class="container testimonials__container mySwiper">
+        <h2>Students' testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="images/avatar1.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem perferendis eligendi sequi veritatis, mollitia error ea nam cupiditate et tempore assumenda. Reiciendis sint libero distinctio officiis quam necessitatibus quibusdam?</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="images/avatar2.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Ernest Smith</h5>
+                    <small>Web Developer</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem perferendis eligendi sequi veritatis, mollitia error ea nam cupiditate et tempore assumenda. Reiciendis sint libero distinctio officiis quam necessitatibus quibusdam?</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="images/avatar3.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Adam Scott</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem perferendis eligendi sequi veritatis, mollitia error ea nam cupiditate et tempore assumenda. Reiciendis sint libero distinctio officiis quam necessitatibus quibusdam?</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="images/avatar4.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Haija Bintu</h5>
+                    <small>Model</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem perferendis eligendi sequi veritatis, mollitia error ea nam cupiditate et tempore assumenda. Reiciendis sint libero distinctio officiis quam necessitatibus quibusdam?</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="images/avatar5.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Jane Doe</h5>
+                    <small>Web Developer</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem perferendis eligendi sequi veritatis, mollitia error ea nam cupiditate et tempore assumenda. Reiciendis sint libero distinctio officiis quam necessitatibus quibusdam?</p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+     </section>
+    <!-- ======= Testimonial end ======= -->
 
 
+    <!-- ======= Footer start ======= -->
+    <!-- ======= Footer end ======= -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          //when window width is >= 600px
+          breakpoints: {
+            600: {
+          slidesPerView: 2
+            }
+          }
+        });
+      </script>
 </body>
 </html>
