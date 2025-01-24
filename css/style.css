@@ -413,7 +413,7 @@ footer ul li a:hover{
 @media screen and (max-width: 1024px){
 
     body{
-        background: red;
+        /* background: red; */
     }
     .container{
         width: var(--container-width-md);
@@ -508,8 +508,52 @@ footer ul li a:hover{
 
 
     /*=======Header==================*/
+    header{
+        height: 52vh;
+        margin-bottom: 4rem;
+    }
 
+    .header___container{
+        gap: 0;
+        padding-bottom: 3rem;
+    }
 
+    /*=======Categories==================*/
+    .categories{
+        height: auto;
+    }
+
+    .categories__container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .categories__left{
+        margin-right: 0;
+    }
+
+    /*=======Courses==================*/
+    .coures{
+        margin-top: 0;
+    }
+
+    .courses__container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*=======FAQs==================*/
+    .faqs__container{
+        grid-template-columns: 1fr;
+    }
+
+    .faq{
+        padding: 1.5rem;
+    }
+
+    /*=======Footer==================*/
+    .footer__container{
+        grid-template-columns: 1fr 1fr;
+    }
 }
     
 
